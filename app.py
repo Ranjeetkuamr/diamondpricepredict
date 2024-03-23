@@ -40,7 +40,7 @@ def predict_datapoint():
         
         results=predict_pipeline.predict(pred_df)
         
-        return render_template('home.html',results=results[0])
+        return render_template('home.html',final_result=results[0])
     
 
 if __name__=="__main__":
